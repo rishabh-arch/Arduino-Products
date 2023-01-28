@@ -1,18 +1,16 @@
-# EEPROM With 999 Numbers 
+# EEPROM With 999 Numbers
 
 This is a simple program that allows you to store 999 numbers in the EEPROM of your Arduino. Even in UNO boards, which have only 1Kb of EEPROM memory.
 
 ## How to use it
-just upload the code to your Arduino and open the Serial Monitor. You will see a menu with the following options:
 
+just upload the code to your Arduino and open the Serial Monitor. You will see a menu with the following options:
 
 ## E18-D80NK IR Obstacle Avoidance Proximity Sensor
 
 ![https://circuitdigest.com/microcontroller-projects/interfacing-e18d80nk-ir-proximity-sensor-with-arduino](https://circuitdigest.com/sites/default/files/inlineimages/u3/E18-D80NK-Sensor-Pinout.png)
 
-
 ## EEPROM BASIC COMMANDS
-
 
 ```c
 #include <EEPROM.h>
@@ -44,4 +42,3 @@ void loop()
    display.showNumberDec(1234, false);
 }
 ```
-
