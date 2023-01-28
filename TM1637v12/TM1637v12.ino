@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 #include <SevenSegmentTM1637.h>
-long int a=9987, x = 0, z = 300;
+long int a=0, x = 0, z = 300;
 
 const int e18_sensor = 7;
 int sen =1;
@@ -35,11 +35,16 @@ void loop()
 
    
 while(state== LOW && sen ==2){
-  if(a==10000){
-    a=0;}
+ 
     a=a+1;
      sen=1;
-   display.print(a);
+  
+    if(a==10000){
+    display.clear();
+    a=1;
+   
+    }
+     display.print(a);
       } 
    
 }
