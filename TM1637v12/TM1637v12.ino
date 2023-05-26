@@ -3,9 +3,8 @@
 #include <SevenSegmentTM1637.h>
 long int a=0, x = 0, z = 300;
 
-const int e18_sensor = 7;
+const int e18_sensor = 6;
 int sen =1;
-int totalCounts = 1000;
 String num;
 #define CLK 2
 #define DIO 3
